@@ -1,0 +1,113 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    
+	 <link rel="stylesheet" href="reg.css">    
+	<script>
+function check() {
+    var x = document.forms["uresha"]["fname"].value;
+	    var y = document.forms["uresha"]["mail"].value;
+		var a= document.forms["uresha"]["lname"].value;
+		var b = document.forms["uresha"]["con"].value;
+		
+    if (x == "") {
+       alert("Name ,contact,lastname and email must be filled out");
+        return false;
+    }
+	if (y == "") {
+      alert("Name ,contact,lastname and email must be filled out");
+        return false;
+    }
+	if (a == "") {
+        alert("Name ,contact,lastname and email must be filled out");
+        return false;
+    }
+	if (b == "") {
+        alert("Name ,contact,lastname and email must be filled out");
+        return false;
+    }
+	
+}
+</script>
+
+    
+    
+    
+    </head>
+    <body>
+	<div class="menu">
+        <a href="home.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="service.html">Service</a>
+        <a href="register.html">Register</a>
+        <a href="other.html">Other</a>
+        
+       
+      </div>
+    
+    <font style="color:rgb(187, 30, 179);font-size:18px">If you proud to be our registred customer and get more discounts,
+         fill the registration form given below.</font>
+    <h2><font style="color:black">Customer Registration Form</font></h2>
+    <marquee><font style= "font:black;font-size:20px">Toys Paradise-No.101, D.S Senanayake Mawatha, Colombo 08|
+            E-mail  talk@toysparadise.lk /     General Line  +94 112 154 555  
+        </font></marquee>
+    <div class="container">
+    
+      <form name="uresha" onsubmit="return check()">
+        <label >First Name</label>
+        <input type="text"  name="fname" placeholder="Your name..">
+    
+        <label >Last Name</label>
+        <input type="text"  name="lname" placeholder="Your last name..">
+    
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" placeholder="Your address..">
+    
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="sri-lanka">Sri-Lanka</option>
+          <option value="india">India</option>
+          <option value="chaina">Chaina</option>
+          <option value="france">France</option>
+        </select>
+        <label for="province">Province</label>
+        <select id="province" name="province">
+          <option value="southern">Southern</option>
+          <option value="western">Westhern</option>
+          <option value="northern">Northern</option>
+          <option value="north-central">North-Central</option>
+          <option value="central">Central</option>
+          <option value="uva">Uva</option>
+          <option value="sabaragamuwa">Sabaragamuwa</option>
+          <option value="eastern">Eastern</option>
+          <option value="north-western">North-Western</option>
+        </select>
+    
+        <label for="contact-no">Contact No</label>
+        <input type="text"  name="con" placeholder="Your contact no..">
+        
+        <label >Mali Address</label>
+        <input type="text"  name="mail" placeholder="Your mail- address..">
+    
+        <label >Gender</label>
+        <input type="radio" name="gender"><label>Female</label>
+        <input type="radio" name="gender2"><label>Male</label>
+        <br><br><br>
+        <label for="comment">Comment</label>
+        <textarea id="comment" name="comment" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    
+    </body>
+    </html>
+    
+    
+
+
+
